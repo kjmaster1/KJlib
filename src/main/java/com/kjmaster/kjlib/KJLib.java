@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 public class KJLib
 {
     public static final String MODID = "kjlib";
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.0.5";
     public static final String CLIENT_PROXY = "com.kjmaster.kjlib.client.ClientProxy";
     public static final String COMMON_PROXY = "com.kjmaster.kjlib.common.CommonProxy";
     public static Logger LOGGER;

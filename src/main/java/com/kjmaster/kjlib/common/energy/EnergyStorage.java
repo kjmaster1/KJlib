@@ -48,9 +48,13 @@ public class EnergyStorage implements IEnergyStorage {
         this.maxExtract = maxExtract;
     }
 
-    public int getMaxReceive() { return maxReceive; }
+    public int getMaxReceive() {
+        return maxReceive;
+    }
 
-    public int getMaxExtract() { return maxExtract; }
+    public int getMaxExtract() {
+        return maxExtract;
+    }
 
     @Override
     public int receiveEnergy(int maxReceive, boolean simulate) {
@@ -82,11 +86,21 @@ public class EnergyStorage implements IEnergyStorage {
 
     @Override
     public boolean canExtract() {
-        return true;
+        return this.maxExtract > 0 && this.energy != 0;
     }
 
     @Override
     public boolean canReceive() {
-        return false;
+        return this.maxReceive > 0 && this.energy != this.capacity;
+    }
+
+    public void setEnergy(int energy) {
+        this.energy = energy;
+        if (this.energy < 0) {
+            this.energy = 0;
+        }
+        if (this.energy > this.capacity) {
+            this.energy = this.capacity;
+        }
     }
 }

@@ -1,6 +1,6 @@
 package com.kjmaster.kjlib.utils;
 
-import com.ibm.icu.text.NumberFormat;
+import java.text.NumberFormat;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
@@ -205,38 +205,38 @@ public final class StringHelper {
 
     public static String shiftForDetails() {
 
-        return localize("info.cofh.holdShiftForDetails");
+        return localize("info.kjlib.holdShiftForDetails");
     }
 
     /* TUTORIAL TAB HELPERS */
     public static String tutorialTabAugment() {
 
-        return localize("info.cofh.tutorial.tabAugment");
+        return localize("info.kjlib.tutorial.tabAugment");
     }
 
     public static String tutorialTabAugmentUpgrade() {
 
-        return localize("info.cofh.tutorial.tabAugmentUpgrade");
+        return localize("info.kjlib.tutorial.tabAugmentUpgrade");
     }
 
     public static String tutorialTabConfiguration() {
 
-        return localize("info.cofh.tutorial.tabConfiguration");
+        return localize("info.kjlib.tutorial.tabConfiguration");
     }
 
     public static String tutorialTabRedstone() {
 
-        return localize("info.cofh.tutorial.tabRedstone");
+        return localize("info.kjlib.tutorial.tabRedstone");
     }
 
     public static String tutorialTabSecurity() {
 
-        return localize("info.cofh.tutorial.tabSecurity");
+        return localize("info.kjlib.tutorial.tabSecurity");
     }
 
     public static String tutorialTabFluxRequired() {
 
-        return localize("info.cofh.tutorial.fluxRequired");
+        return localize("info.kjlib.tutorial.fluxRequired");
     }
 
     public static final String[] ROMAN_NUMERAL = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
